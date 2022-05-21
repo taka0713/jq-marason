@@ -1,0 +1,15 @@
+.box {
+    width: 600px;
+    height: 350px;
+    border: solid 3px #000;
+}
+
+p{
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+input.boxin{
+    width: 50px;
+    margin: 30px 0 15px 50px;
+}
