@@ -20,9 +20,9 @@
   </header>
   <div class="container">
     <div class="box"><h1>1kmあたりのかかる分、秒</h1>
-      <label><input type="text" value="0" class="boxin" id="minutes"/>分</label>
-      <label><input type="text" value="1" class="boxin" id="seconds"/>秒</label>
-      <input type="button" class="button1" value="入力内容を取得する">
+      <label><input type="text" oninput="value = value.replace(/[０-９]/g,s => String.fromCharCode(s.charCodeAt(0) - 65248)).replace(/\D/g,'');" value="0" class="boxin" id="minutes"/>分</label>
+      <label><input type="text" oninput="value = value.replace(/[０-９]/g,s => String.fromCharCode(s.charCodeAt(0) - 65248)).replace(/\D/g,'');" value="1" class="boxin" id="seconds"/>秒</label>
+      
       <p>ゴールした時</p>
       <div id="jikan"></div>
     </div>
